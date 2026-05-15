@@ -163,6 +163,15 @@
       font-weight:500;
     }
 
+    .main-photo{
+      width:100%;
+      max-height:500px;
+      object-fit:cover;
+      border-radius:25px;
+      margin-bottom:30px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    }
+
     .message{
       color:#5c2c44;
       font-size:1.18rem;
@@ -190,11 +199,11 @@
       padding:25px;
       border-radius:25px;
       background:rgba(255,255,255,0.18);
-      color:white;
+      color:#000000;
       font-size:1.4rem;
       font-weight:600;
       line-height:2;
-      text-shadow:0 2px 8px rgba(0,0,0,0.2);
+      text-shadow:none;
     }
 
     .heart{
@@ -207,25 +216,14 @@
       0%{
         transform:scale(1);
       }
+
       50%{
         transform:scale(1.2);
       }
+
       100%{
         transform:scale(1);
       }
-    }
-
-    .main-photo{
-      margin-top:25px;
-      margin-bottom:35px;
-    }
-
-    .main-photo img{
-      width:100%;
-      max-height:520px;
-      object-fit:cover;
-      border-radius:30px;
-      box-shadow:0 10px 35px rgba(0,0,0,0.25);
     }
 
     .carousel-container{
@@ -320,7 +318,7 @@
 
       .card{
         width:100%;
-    max-height:95vh;
+        max-height:95vh;
         padding:30px 22px;
         border-radius:28px;
       }
@@ -332,7 +330,6 @@
 
       .big-title{
         font-size:3.5rem;
-        line-height:1.2;
       }
 
       .subtitle{
@@ -341,7 +338,6 @@
 
       .message{
         font-size:1rem;
-        line-height:1.9;
       }
 
       .special-message{
@@ -349,22 +345,12 @@
         padding:18px;
       }
 
-      .heart{
-        font-size:2.5rem;
-      }
-
       .carousel img{
         max-height:420px;
       }
 
-      .carousel-buttons button{
-        width:38px;
-        height:38px;
-        font-size:1.2rem;
-      }
-
-      .date{
-        font-size:1rem;
+      .main-photo{
+        max-height:350px;
       }
     }
 
@@ -396,32 +382,33 @@
     </div>
 
     <!-- FOTO PRINCIPAL -->
-
-    <div class="main-photo">
-      <img src="10.jpg" alt="Foto principal">
-    </div>
+    <img src="10.jpg" alt="Foto Principal" class="main-photo">
 
     <div class="message" id="typewriter"></div>
 
     <div class="heart">❤️</div>
 
+    <!-- MENSAJE ESPECIAL -->
+
     <div class="special-message">
 
       💖 FELIZ CUMPLEAÑOS 💖 <br><br>
 
-      Te queremos mucho mamá maravillosa. <br><br>
+      Te queremos muchísimo mamá maravillosa. <br><br>
 
-      Gracias por tenernos paciencia siempre. 💖 <br><br>
+      Gracias por tenernos paciencia incluso en nuestros momentos más difíciles. 💖 <br><br>
 
-      Gracias por siempre estar ahí cuando más te necesitamos. <br><br>
+      Gracias por siempre estar ahí cuando más te necesitamos, por escucharnos, apoyarnos y nunca soltarnos la mano. ✨ <br><br>
 
-      Gracias por perdonarnos y apoyarnos incluso en los momentos difíciles. <br><br>
+      Gracias por perdonarnos, comprendernos y enseñarnos el verdadero significado del amor de familia. ❤️ <br><br>
 
-      Gracias por ser la persona que siempre nos une como familia. ✨ <br><br>
+      Gracias por ser la persona que siempre nos une, la luz de nuestro hogar y quien hace que nuestra familia permanezca fuerte y llena de amor. ✨ <br><br>
 
-      Eres una mamá maravillosa y te mereces todo lo mejor del mundo. 💕 <br><br>
+      Eres una mamá maravillosa y mereces todo lo mejor del mundo porque tu corazón es enorme y siempre das todo por nosotros. 💕 <br><br>
 
-      🎂 Feliz cumpleaños Mónica Martínez 🎂 <br><br>
+      Deseamos que en este cumpleaños la vida te regale muchísima felicidad, salud, tranquilidad y momentos hermosos. 🎂 <br><br>
+
+      Nunca olvides lo importante y especial que eres para nosotros. 💖 <br><br>
 
       Con muchísimo amor: <br>
       ❤️ Tus hijos ❤️
@@ -458,43 +445,25 @@
 
   <script>
 
-    const text = `🎂 Hoy es un día muy especial porque celebramos tu vida, mamá maravillosa. 💖
+    const text = `🎂 Hoy celebramos la vida de una mujer increíble y maravillosa. 💖
 
-En tu cumpleaños queremos recordarte lo importante que eres para todos nosotros y agradecerte por cada momento lleno de amor, apoyo y cariño.
+Gracias por tu amor infinito, por tu paciencia y por nunca rendirte con nosotros.
 
-Gracias por tenernos paciencia incluso cuando cometemos errores.
+Gracias por estar ahí incluso cuando no sabemos cómo expresar lo que sentimos.
 
-Gracias por siempre estar ahí en los momentos difíciles y también en los momentos felices.
+Gracias por perdonarnos, comprendernos y enseñarnos a seguir adelante incluso en los momentos difíciles.
 
-Gracias por perdonarnos, entendernos y nunca dejarnos solos. 💕
+Eres quien mantiene unida a nuestra familia, quien siempre nos llena de amor y tranquilidad.
 
-Gracias por ser la persona que siempre nos une como familia y por llenar nuestro hogar de amor.
+Tu corazón es enorme y tu cariño hace que nuestra vida sea mucho más hermosa.
 
-Tu amor ilumina nuestra vida todos los días y hace que todo sea mejor.
+Nos sentimos orgullosos y agradecidos de tener una mamá tan especial como tú. 💕
 
-Eres una mujer increíble, fuerte, amorosa y maravillosa.
-
-Nos sentimos orgullosos de tener una mamá tan especial como tú. 💖
-
-Gracias por cada abrazo, por cada consejo, por cada sonrisa y por nunca rendirte.
-
-Gracias por todo lo que haces por nosotros cada día aunque muchas veces no lo digamos.
-
-Hoy queremos que sonrías muchísimo, que disfrutes cada instante y que recibas todo el amor que mereces.
+Deseamos que este cumpleaños esté lleno de felicidad, salud, amor y momentos inolvidables.
 
 ✨ Que Dios te bendiga siempre ✨
 
-✨ Que nunca te falte salud ✨
-
-✨ Que siempre seas muy feliz ✨
-
-✨ Que todos tus sueños se hagan realidad ✨
-
-✨ Que este nuevo año venga lleno de felicidad y momentos hermosos ✨
-
-🎉 FELIZ CUMPLEAÑOS MAMÁ 🎉
-
-Te amamos muchísimo y siempre estaremos contigo. ❤️`;
+🎉 FELIZ CUMPLEAÑOS MAMÁ 🎉`;
 
     let i = 0;
 
@@ -512,8 +481,6 @@ Te amamos muchísimo y siempre estaremos contigo. ❤️`;
     }
 
     typeWriter();
-
-    // GLOBOS
 
     for(let i=0;i<15;i++){
 
@@ -536,8 +503,6 @@ Te amamos muchísimo y siempre estaremos contigo. ❤️`;
 
       document.body.appendChild(balloon);
     }
-
-    // CONFETI
 
     const colors = [
       "#ff4d6d",
@@ -567,8 +532,6 @@ Te amamos muchísimo y siempre estaremos contigo. ❤️`;
 
       document.body.appendChild(confetti);
     }
-
-    // CARRUSEL
 
     let currentSlide = 0;
 
