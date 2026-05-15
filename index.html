@@ -31,8 +31,6 @@
       padding:30px;
     }
 
-    /* FONDO */
-
     .background{
       position:fixed;
       width:100%;
@@ -83,32 +81,20 @@
       }
     }
 
-    /* TARJETA */
-
     .card{
       position:relative;
       z-index:10;
-
       width:100%;
       max-width:850px;
-
       max-height:90vh;
       overflow-y:auto;
-
       padding:50px;
-
       border-radius:35px;
-
       background:rgba(255,255,255,0.28);
-
       backdrop-filter:blur(18px);
-
       border:1px solid rgba(255,255,255,0.4);
-
       box-shadow:0 10px 40px rgba(0,0,0,0.15);
-
       text-align:center;
-
       animation:fadeIn 2s ease;
     }
 
@@ -132,18 +118,13 @@
       }
     }
 
-    /* TITULO */
-
     h1{
       font-family:'Dancing Script', cursive;
       font-size:4.5rem;
       color:#ffffff;
       margin-bottom:15px;
-      text-shadow:
-        0 3px 12px rgba(0,0,0,0.25);
+      text-shadow:0 3px 12px rgba(0,0,0,0.25);
     }
-
-    /* TITULO GRANDE */
 
     .big-title{
       font-family:'Dancing Script', cursive;
@@ -151,8 +132,7 @@
       color:#fff;
       margin-top:10px;
       margin-bottom:25px;
-      text-shadow:
-        0 5px 18px rgba(0,0,0,0.35);
+      text-shadow:0 5px 18px rgba(0,0,0,0.35);
       animation:pulseTitle 2s infinite;
     }
 
@@ -168,8 +148,6 @@
       }
     }
 
-    /* FECHA */
-
     .date{
       color:#fff;
       font-size:1.2rem;
@@ -178,16 +156,12 @@
       text-shadow:0 2px 8px rgba(0,0,0,0.2);
     }
 
-    /* SUBTITULO */
-
     .subtitle{
       color:#fff;
       font-size:1.5rem;
       margin-bottom:20px;
       font-weight:500;
     }
-
-    /* MENSAJE */
 
     .message{
       color:#5c2c44;
@@ -210,8 +184,6 @@
       }
     }
 
-    /* MENSAJE ESPECIAL */
-
     .special-message{
       margin-top:40px;
       margin-bottom:25px;
@@ -225,8 +197,6 @@
       text-shadow:0 2px 8px rgba(0,0,0,0.2);
     }
 
-    /* CORAZON */
-
     .heart{
       margin-top:35px;
       font-size:3.2rem;
@@ -237,17 +207,26 @@
       0%{
         transform:scale(1);
       }
-
       50%{
         transform:scale(1.2);
       }
-
       100%{
         transform:scale(1);
       }
     }
 
-    /* CARRUSEL */
+    .main-photo{
+      margin-top:25px;
+      margin-bottom:35px;
+    }
+
+    .main-photo img{
+      width:100%;
+      max-height:520px;
+      object-fit:cover;
+      border-radius:30px;
+      box-shadow:0 10px 35px rgba(0,0,0,0.25);
+    }
 
     .carousel-container{
       margin-top:45px;
@@ -299,8 +278,6 @@
       transform:scale(1.1);
     }
 
-    /* GLOBOS */
-
     .balloon{
       position:fixed;
       bottom:-200px;
@@ -319,8 +296,6 @@
       }
     }
 
-    /* CONFETI */
-
     .confetti{
       position:fixed;
       width:12px;
@@ -337,8 +312,6 @@
       }
     }
 
-    /* RESPONSIVE */
-
     @media(max-width:768px){
 
       body{
@@ -347,7 +320,7 @@
 
       .card{
         width:100%;
-        max-height:95vh;
+    max-height:95vh;
         padding:30px 22px;
         border-radius:28px;
       }
@@ -400,14 +373,12 @@
 
 <body>
 
-  <!-- FONDO -->
   <div class="background">
     <div class="glow"></div>
     <div class="glow"></div>
     <div class="glow"></div>
   </div>
 
-  <!-- TARJETA -->
   <div class="card">
 
     <h1>🎂 Feliz Cumpleaños Mónica Martínez 🎂</h1>
@@ -424,25 +395,37 @@
       🎉 FELIZ CUMPLEAÑOS 🎉
     </div>
 
+    <!-- FOTO PRINCIPAL -->
+
+    <div class="main-photo">
+      <img src="10.jpg" alt="Foto principal">
+    </div>
+
     <div class="message" id="typewriter"></div>
 
     <div class="heart">❤️</div>
 
-    <!-- MENSAJE ESPECIAL -->
-
     <div class="special-message">
+
       💖 FELIZ CUMPLEAÑOS 💖 <br><br>
 
-      Te queremos mucho mamá hermosa. <br>
+      Te queremos mucho mamá maravillosa. <br><br>
 
-      Te deseamos lo mejor hoy y siempre. ✨ <br><br>
+      Gracias por tenernos paciencia siempre. 💖 <br><br>
 
-      Gracias por todo tu amor, tu apoyo y tu cariño infinito. <br><br>
+      Gracias por siempre estar ahí cuando más te necesitamos. <br><br>
+
+      Gracias por perdonarnos y apoyarnos incluso en los momentos difíciles. <br><br>
+
+      Gracias por ser la persona que siempre nos une como familia. ✨ <br><br>
+
+      Eres una mamá maravillosa y te mereces todo lo mejor del mundo. 💕 <br><br>
 
       🎂 Feliz cumpleaños Mónica Martínez 🎂 <br><br>
 
       Con muchísimo amor: <br>
       ❤️ Tus hijos ❤️
+
     </div>
 
     <!-- CARRUSEL -->
@@ -473,30 +456,37 @@
 
   </div>
 
-  <!-- SCRIPT -->
   <script>
 
-    // MENSAJE
-
-    const text = `🎂 Hoy es un día muy especial porque celebramos tu vida, mamá hermosa. 💖
+    const text = `🎂 Hoy es un día muy especial porque celebramos tu vida, mamá maravillosa. 💖
 
 En tu cumpleaños queremos recordarte lo importante que eres para todos nosotros y agradecerte por cada momento lleno de amor, apoyo y cariño.
 
-Gracias por ser nuestra guía, nuestra fuerza y la persona que siempre está ahí incluso en los momentos más difíciles.
+Gracias por tenernos paciencia incluso cuando cometemos errores.
 
-Tu amor ilumina nuestra vida todos los días y hace que nuestro hogar esté lleno de felicidad.
+Gracias por siempre estar ahí en los momentos difíciles y también en los momentos felices.
+
+Gracias por perdonarnos, entendernos y nunca dejarnos solos. 💕
+
+Gracias por ser la persona que siempre nos une como familia y por llenar nuestro hogar de amor.
+
+Tu amor ilumina nuestra vida todos los días y hace que todo sea mejor.
 
 Eres una mujer increíble, fuerte, amorosa y maravillosa.
 
-Nos sentimos orgullosos de tener una mamá tan especial como tú. 💕
+Nos sentimos orgullosos de tener una mamá tan especial como tú. 💖
 
-Gracias por cada abrazo, por cada consejo, por cada sonrisa y por nunca dejarnos solos.
+Gracias por cada abrazo, por cada consejo, por cada sonrisa y por nunca rendirte.
+
+Gracias por todo lo que haces por nosotros cada día aunque muchas veces no lo digamos.
 
 Hoy queremos que sonrías muchísimo, que disfrutes cada instante y que recibas todo el amor que mereces.
 
 ✨ Que Dios te bendiga siempre ✨
 
 ✨ Que nunca te falte salud ✨
+
+✨ Que siempre seas muy feliz ✨
 
 ✨ Que todos tus sueños se hagan realidad ✨
 
@@ -616,11 +606,7 @@ Te amamos muchísimo y siempre estaremos contigo. ❤️`;
       updateCarousel();
     }
 
-    // AUTO PLAY
-
     setInterval(nextSlide, 4000);
-
-    // TOUCH CELULAR
 
     let startX = 0;
 
