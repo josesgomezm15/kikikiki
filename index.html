@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
 
@@ -30,6 +30,8 @@
       position:relative;
       padding:30px;
     }
+
+    /* FONDO */
 
     .background{
       position:fixed;
@@ -81,16 +83,18 @@
       }
     }
 
+    /* TARJETA */
+
     .card{
       position:relative;
       z-index:10;
       width:100%;
-      max-width:850px;
-      max-height:90vh;
+      max-width:900px;
+      max-height:95vh;
       overflow-y:auto;
       padding:50px;
       border-radius:35px;
-      background:rgba(255,255,255,0.28);
+      background:rgba(255,255,255,0.35);
       backdrop-filter:blur(18px);
       border:1px solid rgba(255,255,255,0.4);
       box-shadow:0 10px 40px rgba(0,0,0,0.15);
@@ -118,12 +122,15 @@
       }
     }
 
+    /* TITULOS */
+
     h1{
       font-family:'Dancing Script', cursive;
-      font-size:4.5rem;
+      font-size:4.8rem;
       color:#ffffff;
       margin-bottom:15px;
-      text-shadow:0 3px 12px rgba(0,0,0,0.25);
+      text-shadow:
+        0 3px 12px rgba(0,0,0,0.25);
     }
 
     .big-title{
@@ -132,7 +139,8 @@
       color:#fff;
       margin-top:10px;
       margin-bottom:25px;
-      text-shadow:0 5px 18px rgba(0,0,0,0.35);
+      text-shadow:
+        0 5px 18px rgba(0,0,0,0.35);
       animation:pulseTitle 2s infinite;
     }
 
@@ -163,23 +171,33 @@
       font-weight:500;
     }
 
+    /* IMAGEN PRINCIPAL */
+
     .main-photo{
       width:100%;
-      max-height:500px;
+      border-radius:28px;
+      margin-top:20px;
+      margin-bottom:35px;
       object-fit:cover;
-      border-radius:25px;
-      margin-bottom:30px;
+      max-height:520px;
       box-shadow:0 10px 30px rgba(0,0,0,0.2);
+      border:5px solid rgba(255,255,255,0.5);
     }
 
+    /* MENSAJE */
+
     .message{
-      color:#5c2c44;
+      color:#1f1f1f;
       font-size:1.18rem;
       font-weight:500;
-      line-height:2.1;
-      min-height:280px;
+      line-height:2.2;
+      min-height:320px;
       white-space:pre-line;
-      padding:0 10px;
+      padding:25px;
+      text-align:left;
+      background:rgba(255,255,255,0.45);
+      border-radius:25px;
+      box-shadow:0 8px 25px rgba(0,0,0,0.08);
     }
 
     .cursor{
@@ -193,18 +211,26 @@
       }
     }
 
+    /* MENSAJE ESPECIAL */
+
     .special-message{
       margin-top:40px;
       margin-bottom:25px;
-      padding:25px;
-      border-radius:25px;
-      background:rgba(255,255,255,0.18);
-      color:#000000;
-      font-size:1.4rem;
+      padding:35px;
+      border-radius:28px;
+      background:rgba(255,255,255,0.5);
+      color:#1f1f1f;
+      font-size:1.28rem;
       font-weight:600;
-      line-height:2;
-      text-shadow:none;
+      line-height:2.2;
+      box-shadow:0 8px 25px rgba(0,0,0,0.08);
     }
+
+    .special-message strong{
+      font-size:1.5rem;
+    }
+
+    /* CORAZON */
 
     .heart{
       margin-top:35px;
@@ -226,8 +252,19 @@
       }
     }
 
+    /* CARRUSEL */
+
+    .carousel-title{
+      margin-top:30px;
+      margin-bottom:20px;
+      font-size:2.2rem;
+      color:#ffffff;
+      font-weight:700;
+      text-shadow:0 3px 10px rgba(0,0,0,0.25);
+    }
+
     .carousel-container{
-      margin-top:45px;
+      margin-top:15px;
       position:relative;
       width:100%;
       overflow:hidden;
@@ -276,6 +313,8 @@
       transform:scale(1.1);
     }
 
+    /* GLOBOS */
+
     .balloon{
       position:fixed;
       bottom:-200px;
@@ -294,6 +333,8 @@
       }
     }
 
+    /* CONFETI */
+
     .confetti{
       position:fixed;
       width:12px;
@@ -309,6 +350,8 @@
         transform:translateY(110vh) rotate(720deg);
       }
     }
+
+    /* RESPONSIVE */
 
     @media(max-width:768px){
 
@@ -330,6 +373,7 @@
 
       .big-title{
         font-size:3.5rem;
+        line-height:1.2;
       }
 
       .subtitle{
@@ -338,19 +382,36 @@
 
       .message{
         font-size:1rem;
+        line-height:2;
+        padding:20px;
       }
 
       .special-message{
-        font-size:1.1rem;
-        padding:18px;
+        font-size:1.05rem;
+        padding:22px;
+        line-height:2;
+      }
+
+      .heart{
+        font-size:2.5rem;
       }
 
       .carousel img{
         max-height:420px;
       }
 
-      .main-photo{
-        max-height:350px;
+      .carousel-buttons button{
+        width:38px;
+        height:38px;
+        font-size:1.2rem;
+      }
+
+      .date{
+        font-size:1rem;
+      }
+
+      .carousel-title{
+        font-size:1.5rem;
       }
     }
 
@@ -359,12 +420,14 @@
 
 <body>
 
+  <!-- FONDO -->
   <div class="background">
     <div class="glow"></div>
     <div class="glow"></div>
     <div class="glow"></div>
   </div>
 
+  <!-- TARJETA -->
   <div class="card">
 
     <h1>🎂 Feliz Cumpleaños Mónica Martínez 🎂</h1>
@@ -384,39 +447,54 @@
     <!-- FOTO PRINCIPAL -->
     <img src="10.jpg" alt="Foto Principal" class="main-photo">
 
+    <!-- MENSAJE -->
     <div class="message" id="typewriter"></div>
 
     <div class="heart">❤️</div>
 
     <!-- MENSAJE ESPECIAL -->
-
     <div class="special-message">
 
-      💖 FELIZ CUMPLEAÑOS 💖 <br><br>
+      <strong>💖 FELIZ CUMPLEAÑOS 💖</strong>
+      <br><br>
 
-      Te queremos muchísimo mamá maravillosa. <br><br>
+      Te queremos muchísimo y te deseamos toda la felicidad del mundo. ✨
+      <br><br>
 
-      Gracias por tenernos paciencia incluso en nuestros momentos más difíciles. 💖 <br><br>
+      Gracias por tenernos paciencia, por siempre estar ahí para nosotros,
+      por perdonarnos incluso cuando cometemos errores y por nunca soltarnos la mano.
+      <br><br>
 
-      Gracias por siempre estar ahí cuando más te necesitamos, por escucharnos, apoyarnos y nunca soltarnos la mano. ✨ <br><br>
+      Gracias por ser la persona que siempre nos une,
+      la que llena nuestro hogar de amor,
+      tranquilidad y fuerza todos los días.
+      <br><br>
 
-      Gracias por perdonarnos, comprendernos y enseñarnos el verdadero significado del amor de familia. ❤️ <br><br>
+      Eres una mamá maravillosa,
+      una mujer increíble y una persona que admiramos profundamente. 💖
+      <br><br>
 
-      Gracias por ser la persona que siempre nos une, la luz de nuestro hogar y quien hace que nuestra familia permanezca fuerte y llena de amor. ✨ <br><br>
+      Deseamos que este nuevo año de vida esté lleno de salud,
+      amor, felicidad y momentos hermosos.
+      <br><br>
 
-      Eres una mamá maravillosa y mereces todo lo mejor del mundo porque tu corazón es enorme y siempre das todo por nosotros. 💕 <br><br>
+      Nunca olvides lo importante que eres para nosotros
+      y lo agradecidos que estamos por tenerte en nuestras vidas.
+      <br><br>
 
-      Deseamos que en este cumpleaños la vida te regale muchísima felicidad, salud, tranquilidad y momentos hermosos. 🎂 <br><br>
+      🎂 Feliz Cumpleaños 🎂
+      <br><br>
 
-      Nunca olvides lo importante y especial que eres para nosotros. 💖 <br><br>
-
-      Con muchísimo amor: <br>
       ❤️ Tus hijos ❤️
 
     </div>
 
-    <!-- CARRUSEL -->
+    <!-- TITULO CARRUSEL -->
+    <div class="carousel-title">
+      💕 Nuestros momentos contigo 💕
+    </div>
 
+    <!-- CARRUSEL -->
     <div class="carousel-container">
 
       <div class="carousel" id="carousel">
@@ -443,27 +521,49 @@
 
   </div>
 
+  <!-- SCRIPT -->
   <script>
 
-    const text = `🎂 Hoy celebramos la vida de una mujer increíble y maravillosa. 💖
+    // MENSAJE PRINCIPAL
 
-Gracias por tu amor infinito, por tu paciencia y por nunca rendirte con nosotros.
+    const text = `🎂 Hoy celebramos a una de las personas más importantes de nuestra vida. 💖
 
-Gracias por estar ahí incluso cuando no sabemos cómo expresar lo que sentimos.
+En este día tan especial queremos agradecerte por todo lo que haces por nosotros cada día.
 
-Gracias por perdonarnos, comprendernos y enseñarnos a seguir adelante incluso en los momentos difíciles.
+Gracias por tenernos paciencia incluso en nuestros peores momentos.
+Gracias por siempre estar ahí cuando más te necesitamos.
+Gracias por perdonarnos, apoyarnos y nunca dejarnos solos.
 
-Eres quien mantiene unida a nuestra familia, quien siempre nos llena de amor y tranquilidad.
+Eres la persona que mantiene unida a nuestra familia,
+la que nos da tranquilidad,
+amor,
+fuerza
+y felicidad todos los días.
 
-Tu corazón es enorme y tu cariño hace que nuestra vida sea mucho más hermosa.
+Tu cariño hace que todo sea mejor
+y tu presencia llena nuestro hogar de paz. ✨
 
-Nos sentimos orgullosos y agradecidos de tener una mamá tan especial como tú. 💕
+Nos sentimos muy orgullosos de tener una mamá tan maravillosa,
+tan fuerte,
+tan amorosa
+y tan especial como tú. 💕
 
-Deseamos que este cumpleaños esté lleno de felicidad, salud, amor y momentos inolvidables.
+Gracias por cada abrazo,
+cada consejo,
+cada sonrisa
+y cada sacrificio que has hecho por nosotros.
 
-✨ Que Dios te bendiga siempre ✨
+Deseamos que Dios te bendiga siempre,
+que nunca te falte salud,
+amor,
+felicidad
+y muchísimos momentos hermosos.
 
-🎉 FELIZ CUMPLEAÑOS MAMÁ 🎉`;
+✨ Que todos tus sueños se hagan realidad ✨
+
+🎉 FELIZ CUMPLEAÑOS 🎉
+
+Te amamos muchísimo y siempre estaremos contigo. ❤️`;
 
     let i = 0;
 
@@ -476,11 +576,13 @@ Deseamos que este cumpleaños esté lleno de felicidad, salud, amor y momentos i
 
         i++;
 
-        setTimeout(typeWriter, 32);
+        setTimeout(typeWriter, 30);
       }
     }
 
     typeWriter();
+
+    // GLOBOS
 
     for(let i=0;i<15;i++){
 
@@ -503,6 +605,8 @@ Deseamos que este cumpleaños esté lleno de felicidad, salud, amor y momentos i
 
       document.body.appendChild(balloon);
     }
+
+    // CONFETI
 
     const colors = [
       "#ff4d6d",
@@ -532,6 +636,8 @@ Deseamos que este cumpleaños esté lleno de felicidad, salud, amor y momentos i
 
       document.body.appendChild(confetti);
     }
+
+    // CARRUSEL
 
     let currentSlide = 0;
 
@@ -569,7 +675,11 @@ Deseamos que este cumpleaños esté lleno de felicidad, salud, amor y momentos i
       updateCarousel();
     }
 
+    // AUTO PLAY
+
     setInterval(nextSlide, 4000);
+
+    // TOUCH CELULAR
 
     let startX = 0;
 
